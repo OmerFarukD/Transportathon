@@ -1,4 +1,5 @@
 using Application;
+using Core.CrossCuttingConcerns.Exceptions.Extensions;
 using Core.Security;
 using Core.Security.Encryption;
 using Core.Security.JWT;
@@ -12,6 +13,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:3000") 
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+        });
+});
 
 builder.Services.AddStackExchangeRedisCache(opt=>opt.Configuration="localhost:6380");
 builder.Services.AddPersistenceServices(builder.Configuration);
@@ -44,6 +56,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.UseCors("AllowSpecificOrigin");
+
+app.ConfigureCustomExceptionMiddleware();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -40,7 +40,6 @@
 	  <Folder Include="Features\Reviews\Constants" />
 	  <Folder Include="Features\Reviews\Rules" />
 	  <Folder Include="Features\Transportations\Constants" />
-	  <Folder Include="Features\Transportations\Queries" />
 	  <Folder Include="Features\Transportations\Rules" />
 	</ItemGroup>
 

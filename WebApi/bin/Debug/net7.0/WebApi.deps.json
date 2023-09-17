@@ -21,6 +21,7 @@
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.IdentityModel.Tokens.Jwt": "7.0.0",
           "Core.Application": "1.0.0.0",
+          "Core.CrossCuttingConcerns": "1.0.0.0",
           "Core.Security": "1.0.0.0"
         },
         "runtime": {
@@ -923,6 +924,14 @@
           }
         }
       },
+      "Core.CrossCuttingConcerns/1.0.0.0": {
+        "runtime": {
+          "Core.CrossCuttingConcerns.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Core.Security/1.0.0.0": {
         "runtime": {
           "Core.Security.dll": {
@@ -934,14 +943,6 @@
       "Core.Persistence/1.0.0.0": {
         "runtime": {
           "Core.Persistence.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Core.CrossCuttingConcerns/1.0.0.0": {
-        "runtime": {
-          "Core.CrossCuttingConcerns.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1626,17 +1627,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Core.CrossCuttingConcerns/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Core.Security/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
     "Core.Persistence/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Core.CrossCuttingConcerns/1.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
