@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{2F11F34E-10E5-4126-9C60-062E13582357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{77A1D408-5188-4E37-B98B-195E6B9498A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{8990AEE7-7C16-462C-8F34-925CEF6D3950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{F2EE3E20-EB92-4459-943A-51F00F1619B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F11F34E-10E5-4126-9C60-062E13582357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F11F34E-10E5-4126-9C60-062E13582357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F11F34E-10E5-4126-9C60-062E13582357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F11F34E-10E5-4126-9C60-062E13582357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A1D408-5188-4E37-B98B-195E6B9498A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A1D408-5188-4E37-B98B-195E6B9498A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A1D408-5188-4E37-B98B-195E6B9498A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A1D408-5188-4E37-B98B-195E6B9498A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8990AEE7-7C16-462C-8F34-925CEF6D3950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8990AEE7-7C16-462C-8F34-925CEF6D3950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8990AEE7-7C16-462C-8F34-925CEF6D3950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8990AEE7-7C16-462C-8F34-925CEF6D3950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2EE3E20-EB92-4459-943A-51F00F1619B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2EE3E20-EB92-4459-943A-51F00F1619B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2EE3E20-EB92-4459-943A-51F00F1619B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2EE3E20-EB92-4459-943A-51F00F1619B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

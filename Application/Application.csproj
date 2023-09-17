@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+		<PackageReference Include="MediatR" Version="12.1.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Core.Application">
+	    <HintPath>..\..\..\corePackages\Core.Packages\Core.Application\bin\Debug\net7.0\Core.Application.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Core.CrossCuttingConcerns">
+	    <HintPath>..\..\..\corePackages\Core.Packages\Core.CrossCuttingConcerns\bin\Debug\net7.0\Core.CrossCuttingConcerns.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Core.Persistence">
+	    <HintPath>..\..\..\corePackages\Core.Packages\Core.Persistence\bin\Debug\net7.0\Core.Persistence.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Core.Security">
+	    <HintPath>..\..\..\corePackages\Core.Packages\Core.Security\bin\Debug\net7.0\Core.Security.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Features\Car\Constants" />
+	  <Folder Include="Features\Car\Rules" />
+	  <Folder Include="Features\Drivers\Constants" />
+	  <Folder Include="Features\Drivers\Rules" />
+	  <Folder Include="Features\Messages\Constants" />
+	  <Folder Include="Features\Messages\Rules" />
+	  <Folder Include="Features\Reviews\Constants" />
+	  <Folder Include="Features\Reviews\Rules" />
+	  <Folder Include="Features\Transportations\Constants" />
+	  <Folder Include="Features\Transportations\Queries" />
+	  <Folder Include="Features\Transportations\Rules" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Domain\Domain.csproj" />
+	</ItemGroup>
+	
+	
+</Project>

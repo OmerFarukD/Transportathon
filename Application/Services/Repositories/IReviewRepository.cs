@@ -1,0 +1,9 @@
+﻿using Core.Persistence.Repositories;
+using Domain.Entities;
+
+namespace Application.Services.Repositories;
+
+public interface IReviewRepository : IAsyncRepository<Review, Guid>, IRepository<Review, Guid>
+{
+    
+}
